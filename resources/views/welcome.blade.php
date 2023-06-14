@@ -18,7 +18,7 @@
     </div>
     <div class="navbar-right">
       <ul class="nav-links">
-        <li><a href="">Daftar</a></li>
+        <li><a href="{{ route('regis') }}">Daftar</a></li>
         <li><a href="{{route('login')}}">Masuk</a></li>
       </ul>
     </div>
@@ -74,10 +74,10 @@
     </div>
   </div>
   <div class="card">
-    <img src="{{ asset('images/minyak.png') }}" alt="Gambar 3" class="card-image">
+    <img src="{{ asset('images/cabe.png') }}" alt="Gambar 3" class="card-image">
     <div class="card-content">
-      <p>Minyak Goreng</p>
-      <p>Rp 15.000/liter</p>
+    <p>Cabai Merah</p>
+      <p>Rp 18.000/kg</p>
       <div class="quantity">
         <button class="btn-decrease">-</button>
         <span class="count">0</span>
@@ -87,10 +87,10 @@
 
   </div>
   <div class="card">
-    <img src="{{ asset('images/cabe.png') }}" alt="Gambar 3" class="card-image">
+    <img src="{{ asset('images/minyak.png') }}" alt="Gambar 3" class="card-image">
     <div class="card-content">
-      <p>Cabai Merah</p>
-      <p>Rp 18.000/kg</p>
+    <p>Minyak Goreng</p>
+      <p>Rp 15.000/liter</p>
       <div class="quantity">
         <button class="btn-decrease">-</button>
         <span class="count">0</span>

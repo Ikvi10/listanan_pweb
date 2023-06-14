@@ -26,3 +26,4 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 Route::get('/login',[loginController::class, 'halamanlogin'])->name('login');
 Route::post('/login',[loginController::class, 'postlogin'])->name('postlogin');
 Route::get('/listbelanja',[listbelanjaController::class, 'halamanlist'])->name('listbelanja');
+

@@ -25,8 +25,9 @@
   </div>
 </nav>
 <div class="content">
-
-
+<div class="barang">
+<a href="{{ route('dashboard') }}">Tambah</a>
+</div>
 </div>
 </body>
 </html>

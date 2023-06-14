@@ -5,48 +5,7 @@
     <link href="{{ asset('css/dash.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Mengambil elemen tombol dan span jumlah
-    var btnIncrease = document.getElementById("btn-increase-1","btn-increase-2");
-    var btnDecncrease = document.getElementById("btn-decrease-1","btn-increase-2");
-    var countSpan = document.getElementById("count-1","count-2");
     
-    // Menambahkan event listener ketika tombol + ditekan
-    btnIncrease.addEventListener("click", function() {
-      // Mendapatkan jumlah saat ini
-      var currentCount = parseInt(countSpan.innerText);
-      
-      // Menambahkan 1 ke jumlah saat ini
-      var newCount = currentCount + 1;
-      
-      // Mengupdate tampilan jumlah
-      countSpan.innerText = newCount;
-      
-      // Mengirim data barang ke URL http://localhost:8000/listbelanja
-      var data = {
-        product: "Bawang Merah",
-        price: "38.000",
-        quantity: newCount
-      };
-      var url = "http://localhost:8000/listbelanja";
-      
-      // Mengirim data menggunakan metode POST
-      fetch(url, {
-        method: "POST",
-        body: JSON.stringify(data)
-      })
-      .then(function(response) {
-        // Tanggapan dari server
-        console.log(response);
-      })
-      .catch(function(error) {
-        // Error jika terjadi kesalahan
-        console.error(error);
-      });
-    });
-  });
-</script>
 </head>
 <body>
 <nav class="navbar">
@@ -90,9 +49,27 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<div class="Container">
+ <div class="Container">
 <h3>Disarankan Untuk Anda<h3>
+
 <div class="card-container">
+@foreach($item as $item)
+        
+        <div class="card">
+        <div class="card-content">
+        <img src="{{ asset('images/'.$item->gambar) }}" alt="Gambar Item">
+            <h2>{{ $item->judul }}</h2>
+            <p>{{ $item->deskripsi }}</p>
+            <div class="quantity">
+        <button class="btn-decrease" id="btn-decncrease-1">-</button>
+        <span class="count" id="count-1">0</span>
+        <button class="btn-increase" id="btn-increase-1">+</button>
+      </div>
+      </div>
+      </div>
+    @endforeach
+    </div>
+<!-- <div class="card-container">
   <div class="card">
     <img src="{{ asset('images/bamer.png') }}" alt="Gambar 1" class="card-image">
     <div class="card-content">
@@ -194,7 +171,7 @@
       </div>
     </div>
   </div> 
-</div> 
+</div>  --> 
 </div>
 </body>
 </html>

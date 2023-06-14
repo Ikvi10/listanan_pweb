@@ -25,7 +25,7 @@
             </div>
         </form>
         <p>belum punya akun?</p>
-        <a href="daftar.html"><span>daftar</span></a>
+        <a href="{{ route('regis') }}"><span>daftar</span></a>
     </div>
 </body>
 </html>
