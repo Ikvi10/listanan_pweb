@@ -1,0 +1,150 @@
+body {
+  background-color: pink;
+}
+.navbar {
+  background-color: #FFDFDF;
+  padding: 10px 0;
+  height: 110px;
+}
+
+.navbar-brand{
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  left: 60px;
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 1000px; /* Ubah lebar sesuai kebutuhan */
+  padding: 5px;
+  border: none;
+  position: absolute;
+  top: 40px;
+  left: 220px;
+  border-radius: 4px;
+}
+
+.search-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  right: 180px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+  right: 100px;
+
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+  position: absolute;
+  right: 50;
+}
+
+  #carouselExampleRide {
+    margin-top: 10px;
+    height: 210px; /* Atur jarak dari navbar ke carousel sesuai kebutuhan Anda */
+  }
+
+  #carouselExampleRide img{
+    width: 100%;
+  height: auto;
+  object-fit: cover;
+  }
+
+  .Container{
+    background-color: pink;
+    color: pink;
+  }
+  .Container h3 {
+    position: absolute;
+    top: 310px;
+    left: 0;
+    color: rgb(200, 101, 117);
+  }
+   .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 300px;
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+    background-color: pink;
+  }
+  
+  .card-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .card-content {
+    overflow: hidden;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+  }
+  
+  .card-content p {
+    margin-bottom: 10px;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-decrease,
+  .btn-increase {
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .count {
+    margin: 0 10px;
+  }
+  
+  
+  

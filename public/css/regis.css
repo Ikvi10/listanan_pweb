@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-image: url('../images/navbar.png');
+    background-size: cover;
+    height: 155px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+}
+
+.login-container .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* .login-container .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+} */
+
+.login-container .form-group .submit-button {
+    width: 80%;
+    padding: 10px;
+    background: #DF6B8E;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.login-container .form-group input {
+    width: 150%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+  }
+
+  .login-container .form-group1 {
+    margin-bottom: 15px;
+   
+   left: 230px;
+}
+
+.login-container .form-group1 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* .login-container .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+} */
+
+.login-container .form-group1 .submit-button {
+    width: 80%;
+    padding: 10px;
+    background: #DF6B8E;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.login-container .form-group1 input {
+    width: 150%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+  }
+  
+  .login-container p{
+    margin-left: 90px;
+    margin-top: 5px;
+  }
+  .login-container span{
+    margin-left: 80px;
+    color: #DF6B8E;;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:visited {
+    color: inherit;
+  }

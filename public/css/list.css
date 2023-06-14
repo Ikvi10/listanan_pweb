@@ -1,0 +1,81 @@
+body {
+    background-color: #FFDFDF;
+  }
+  .navbar {
+    background-color: #FFDFDF;
+    padding: 10px 0;
+    height: 110px;
+  }
+  
+  .navbar-brand{
+    position: absolute;
+  width: 120px;
+  height: 100px;
+  left: 60px;
+  }
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links img{
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  .navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 1000px; /* Ubah lebar sesuai kebutuhan */
+    padding: 5px;
+    border: none;
+    position: absolute;
+    top: 40px;
+    left: 220px;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 40px;
+    right: 180px;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    right: 100px;
+  
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+    position: absolute;
+    right: 50;
+  }
+
+  .content{
+    background-color: #FFDFDF;
+  }
