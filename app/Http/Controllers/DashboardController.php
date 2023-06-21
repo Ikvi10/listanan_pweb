@@ -32,6 +32,10 @@ class DashboardController extends Controller
         });
     }
 
+    public function halinfo(){
+        return view('dashboard.infobrg');
+    }
+}
     
 
     // public function index()
@@ -39,7 +43,7 @@ class DashboardController extends Controller
     //     $item = Barang::all();
     //     return view('dashboard', compact('barangs'));
     // }
-}
+
 
 
 

@@ -63,115 +63,12 @@
             <div class="quantity">
         <button class="btn-decrease" id="btn-decncrease-1">-</button>
         <span class="count" id="count-1">0</span>
-        <button class="btn-increase" id="btn-increase-1">+</button>
+        <a href="{{ route('halinfo') }}"><button class="btn-increase" id="btn-increase-1">+</button></a>
       </div>
       </div>
       </div>
     @endforeach
     </div>
-<!-- <div class="card-container">
-  <div class="card">
-    <img src="{{ asset('images/bamer.png') }}" alt="Gambar 1" class="card-image">
-    <div class="card-content">
-      <p>Bawang merah </p>
-      <p>38.000/kg</p>
-      <div class="quantity">
-        <button class="btn-decrease" id="btn-decncrease-1">-</button>
-        <span class="count" id="count-1">0</span>
-        <button class="btn-increase" id="btn-increase-1">+</button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="{{ asset('images/telur.png') }}" alt="Gambar 2" class="card-image">
-    <div class="card-content">
-      <p>Telur</p>
-      <p>Rp 1.800/butir</p>
-      <div class="quantity">
-        <button class="btn-decrease">-</button>
-        <span class="count" id="count-2">0</span>
-        <button class="btn-increase"  id="btn-increase-2">+</button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="{{ asset('images/minyak.png') }}" alt="Gambar 3" class="card-image">
-    <div class="card-content">
-      <p>Minyak Goreng</p>
-      <p>Rp 15.000/liter</p>
-      <div class="quantity">
-        <button class="btn-decrease">-</button>
-        <span class="count">0</span>
-        <button class="btn-increase">+</button>
-      </div>
-    </div>
-
-  </div>
-  <div class="card">
-    <img src="{{ asset('images/cabe.png') }}" alt="Gambar 3" class="card-image">
-    <div class="card-content">
-      <p>Cabai Merah</p>
-      <p>Rp 18.000/kg</p>
-      <div class="quantity">
-        <button class="btn-decrease">-</button>
-        <span class="count">0</span>
-        <button class="btn-increase">+</button>
-      </div>
-    </div>
-    
-  </div>
-  <div class="card">
-    <img src="{{ asset('images/ayam.png') }}" alt="Gambar 3" class="card-image">
-    <div class="card-content">
-      <p>Daging Ayam Broiler</p>
-      <p>Rp 38.000/kg</p>
-      <div class="quantity">
-        <button class="btn-decrease">-</button>
-        <span class="count">0</span>
-        <button class="btn-increase">+</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="{{ asset('images/baput.png') }}" alt="Gambar 3" class="card-image">
-    <div class="card-content">
-      <p>Bawang Putih</p>
-      <p>Rp 33.500/kg</p>
-      <div class="quantity">
-        <button class="btn-decrease">-</button>
-        <span class="count">0</span>
-        <button class="btn-increase">+</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="{{ asset('images/gula.png') }}" alt="Gambar 3" class="card-image">
-    <div class="card-content">
-      <p>Gula</p>
-      <p>Rp 14.000/kg</p>
-      <div class="quantity">
-        <button class="btn-decrease">-</button>
-        <span class="count">0</span>
-        <button class="btn-increase">+</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="{{ asset('images/kentang.png') }}" alt="Gambar 3" class="card-image">
-    <div class="card-content">
-      <p>Kentang</p>
-      <p>Rp 10.000/kg</p>
-      <div class="quantity">
-        <button class="btn-decrease">-</button>
-        <span class="count">0</span>
-        <button class="btn-increase">+</button>
-      </div>
-    </div>
-  </div> 
-</div>  --> 
 </div>
 </body>
 </html>
